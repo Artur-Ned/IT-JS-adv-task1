@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="index.js"></script>
+
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
@@ -30,7 +30,7 @@
     </ul>
     <!--   <li class="item" style="color: black" ;>1 Перший рядок</li> -->
     <form class="div-btn">
-      <input id="inp" class="text-inp" type="text" value="ffffff" />
+      <input id="inp" class="text-inp" type="text" />
 
       <input
         type="button"
@@ -80,5 +80,11 @@
         ● Додати на початок<br />
       </p>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
+<!-- Добрый день. Уже пол дня потерял и не мону разобраться:
+1) почему через id я не могу получить доступ к инпуту? 69,70 строка JS (при консольлоге выдают NULL) а через класс всё нормально
+2) Почему не могу добраться до свойства value инпута? 73 строка JS удаётся обратится к инпуту через класс, но  value выдаёт undefind
+3) я сделал пример строго как по конспекту (у меня это 78 js) но ...
+-->
