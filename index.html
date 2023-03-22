@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Створіть список. Реалізуйте кнопки з
+наступним
+функціоналом, що дозволяють
+змінювати DOM:
+● Вибрати перший елемент
+● Вибрати останній елемент
+● Вибрати наступний елемент
+● Вибрати попередній елемент
+● Додати елемент
+● Видалити елемент
+● Додати на початок -->
+
+    <ul class="list">
+      <li class="item">1 Перший рядок</li>
+      <li class="item">2 Другий рядок</li>
+      <li class="item">3 Третій рядок</li>
+      <li class="item">4 Четвертий рядок</li>
+      <li class="item">5 Пятий рядок</li>
+    </ul>
+    <!--   <li class="item" style="color: black" ;>1 Перший рядок</li> -->
+    <form class="div-btn">
+      <input id="inp" class="text-inp" type="text" value="ffffff" />
+
+      <input
+        type="button"
+        id="first"
+        value="Вибрати перший елемент"
+        onclick="choseFirstElem()"
+      />
+      <input
+        type="button"
+        id="last"
+        value="Вибрати останній елемент"
+        onclick="choseLastElem()"
+      />
+      <input
+        type="button"
+        id="next"
+        value="Вибрати наступний елемент"
+        onclick="choseNextElem()"
+      />
+      <input
+        type="button"
+        id="prev"
+        value="Вибрати попередній елемент"
+        onclick="choosPrevElem()"
+      />
+      <input
+        type="button"
+        id="add"
+        value="Додати елемент"
+        onclick="append(this.form)"
+        ;
+      />
+      <input type="button" id="del" value="Видалити елемент" />
+      <input type="button" id="addstart" value="Додати на початок" />
+    </form>
+
+    <div class="task">
+      <p>
+        Створіть список. Реалізуйте кнопки з наступним функціоналом, що
+        дозволяють змінювати DOM: <br />
+        ● Вибрати перший елемент <br />
+        ● Вибрати останній елемент <br />
+        ● Вибрати наступний елемент <br />
+        ● Вибрати попередній елемент <br />
+        ● Додати елемент <br />
+        ● Видалити елемент <br />
+        ● Додати на початок<br />
+      </p>
+    </div>
+  </body>
+</html>

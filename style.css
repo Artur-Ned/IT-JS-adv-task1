@@ -1,0 +1,55 @@
+.list {
+    position: relative;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 20px;
+}  
+
+.div-btn {
+    display: flex;
+    width: 51%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.div-btn > [type="button"] {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: auto;
+    height: 51px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    
+    
+}
+
+.div-btn>input:hover {
+    background-color: navajowhite;
+    cursor: pointer;
+    color: brown;
+    border: none;
+}
+
+.item:hover {
+    color: tomato;
+    cursor: pointer;
+}
+
+.task {
+    border: 2px yellowgreen solid;
+    width: 400px;
+    padding: 10px;
+    position: absolute;
+    right: 135px;
+    top: 10px;
+    
+}
+
+.text-inp {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 2px solid brown;
+}
+
