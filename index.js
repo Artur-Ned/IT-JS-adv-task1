@@ -65,20 +65,27 @@ function choosPrevElem() {
 
 }   
 
-
 let texxID = document.getElementById("inp");
 console.log(texxID);
-
-let texxx = document.getElementsByClassName("text-inp");
-console.log(texxx);
-console.log(texxx.value);
-
+console.log(texxID.value);
 
 
 function append(form) {
         if (form.input.value) {
           var newItem = document.createElement("li");
           newItem.innerHTML = form.input.value;
-          document.getElementsByClassName("text-inp").appendChild(newItem);
+          document.getElementById("myUL").appendChild(newItem);
         }
-}
+      }
+
+
+// function append(form) {
+//     if (true) {let texxID = document.getElementById("inp");
+//         let newItem = document.createElement("li");
+//     newItem.innerHTML = texxID.value;
+//       console.log(texxID.value);
+//         document.getElementsByClassName("list").appendChild(newItem);
+//         console.log(texxID.value); }      
+    
+    
+// }
