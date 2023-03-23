@@ -70,7 +70,8 @@ function addElem() {
     let value = inputRef.value; 
     let newItem = document.createElement("li");
           newItem.innerHTML = value;
-          document.getElementById("myUL").appendChild(newItem);
+    document.getElementById("myUL").appendChild(newItem);
+    inputRef.value = "";
 
 }
 
@@ -81,7 +82,8 @@ function addOnStart() {
     newItem.innerHTML = value; 
     const arrLi = document.getElementsByTagName("li");
     let itemForOrientir = arrLi[0];
-    document.getElementById("myUL").insertBefore(newItem,  itemForOrientir);
+    document.getElementById("myUL").insertBefore(newItem, itemForOrientir);
+    inputRef.value = "";
 }
 
 function delElem() {
