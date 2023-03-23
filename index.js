@@ -65,51 +65,30 @@ function choosPrevElem() {
 
 }   
 
+let inputRef = document.querySelector("#inp");
+let value = inputRef.value; 
+
 function addElem() {
-     let inputRef = document.querySelector("#inp");
-    let value = inputRef.value; 
+   
     let newItem = document.createElement("li");
           newItem.innerHTML = value;
           document.getElementById("myUL").appendChild(newItem);
 
 }
 
+function addOnStart() {
+    let newItem = document.createElement("li");
+    newItem.innerHTML = value; 
+    const arrLi = document.getElementsByClassName("item")
+    let itemForOrientir = arrLi[0];
+    document.getElementById("myUL").insertBefore(newItem,  itemForOrientir);
+}
 
+function delElem() {
+    let list = document.getElementById("myUL");
+    let item = list.lastElementChild;
+    list.removeChild(item);
+}
 
-// {inputRef.addEventListener('blur', foo);
-
-// function foo(event) {
-//     let inputRefValue = event.currentTarget.value.length;
-//     if (inputRefValue === +inputRef.dataset.length) {
-//         remove()
-//          console.log("you win");
-  
-//         return inputRef.classList.add("valid");
-      
-//     } else inputRef.classList.add("invalid");
-//     // let numberOfLength = inputRef.dataset.length;
-    
-//     console.log("you loos");
-//     // inputRef.classList.add("valid");   
-     
-// }
-  
-// function remove() {
-     
-//     inputRef.classList.remove("valid");
-//     inputRef.classList.remove("invalid");
-//    }
-//  }
-
-
-
-
-// function append(form) {
-//         if (form.input.value) {
-//           var newItem = document.createElement("li");
-//           newItem.innerHTML = form.input.value;
-//           document.getElementById("myUL").appendChild(newItem);
-//         }
-//       }
 
 
