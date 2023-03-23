@@ -65,11 +65,9 @@ function choosPrevElem() {
 
 }   
 
-let inputRef = document.querySelector("#inp");
-let value = inputRef.value; 
-
 function addElem() {
-   
+    let inputRef = document.querySelector("#inp");
+    let value = inputRef.value; 
     let newItem = document.createElement("li");
           newItem.innerHTML = value;
           document.getElementById("myUL").appendChild(newItem);
@@ -78,6 +76,8 @@ function addElem() {
 
 function addOnStart() {
     let newItem = document.createElement("li");
+    let inputRef = document.querySelector("#inp");
+    let value = inputRef.value;
     newItem.innerHTML = value; 
     const arrLi = document.getElementsByClassName("item")
     let itemForOrientir = arrLi[0];
