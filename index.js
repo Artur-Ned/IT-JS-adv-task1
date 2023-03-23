@@ -65,27 +65,51 @@ function choosPrevElem() {
 
 }   
 
-let texxID = document.getElementById("inp");
-console.log(texxID);
-console.log(texxID.value);
-
-
-function append(form) {
-        if (form.input.value) {
-          var newItem = document.createElement("li");
-          newItem.innerHTML = form.input.value;
+function addElem() {
+     let inputRef = document.querySelector("#inp");
+    let value = inputRef.value; 
+    let newItem = document.createElement("li");
+          newItem.innerHTML = value;
           document.getElementById("myUL").appendChild(newItem);
-        }
-      }
+
+}
+
+
+
+// {inputRef.addEventListener('blur', foo);
+
+// function foo(event) {
+//     let inputRefValue = event.currentTarget.value.length;
+//     if (inputRefValue === +inputRef.dataset.length) {
+//         remove()
+//          console.log("you win");
+  
+//         return inputRef.classList.add("valid");
+      
+//     } else inputRef.classList.add("invalid");
+//     // let numberOfLength = inputRef.dataset.length;
+    
+//     console.log("you loos");
+//     // inputRef.classList.add("valid");   
+     
+// }
+  
+// function remove() {
+     
+//     inputRef.classList.remove("valid");
+//     inputRef.classList.remove("invalid");
+//    }
+//  }
+
+
 
 
 // function append(form) {
-//     if (true) {let texxID = document.getElementById("inp");
-//         let newItem = document.createElement("li");
-//     newItem.innerHTML = texxID.value;
-//       console.log(texxID.value);
-//         document.getElementsByClassName("list").appendChild(newItem);
-//         console.log(texxID.value); }      
-    
-    
-// }
+//         if (form.input.value) {
+//           var newItem = document.createElement("li");
+//           newItem.innerHTML = form.input.value;
+//           document.getElementById("myUL").appendChild(newItem);
+//         }
+//       }
+
+
